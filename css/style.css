@@ -1,0 +1,246 @@
+import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
+* {
+  box-sizing: border-box;
+}
+body {
+  margin-top: 2rem;
+  font-family: 'Lato', sans-serif;
+  background: #00b9ce;
+  color:black;
+  -webkit-font-smoothing: antialiased;
+  font-size: 15px;
+}
+/*.searchbox {
+  max-width: 20rem;
+  margin: 1rem auto;
+}*/
+.searchbox {
+  height: 3rem;
+  width: 100%;
+  box-shadow: none;
+  border: none;
+  padding: 0 1rem;
+  color: #003d44;
+  border-radius: 0.2rem;
+  max-width: 20rem;
+  margin: 1rem auto;
+}
+
+/*.searchbox_button {
+  border: none;
+  margin: 1rem 0 0 0;
+  background: #11e7ff;
+  color: #006b77;
+  font-weight: 700;
+  border-radius: 0.4rem;
+  max-width: 20rem;
+  margin: 1rem auto;
+}*/
+.searchbox__button:hover {
+  background: #00def6;
+}
+.card__link {
+  color: #fff;
+  border-bottom: solid 2px #fff;
+  text-decoration: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.card__link:hover {
+  opacity: 0.8;
+}
+.card__notfound {
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem;
+}
+/* some non-BEM stuff to avoid overloading the JSX for demo purposes */
+dl {
+  margin: 0;
+  padding: 0;
+}
+dt,
+dd {
+  text-align: center;
+}
+dt {
+  font-weight: 900;
+  margin-bottom: 0.2rem;
+}
+dd {
+  margin: 0 0 1rem 0;
+}
+/*.dialog{
+    float: left;
+    height:150px;
+    width:150px;
+    margin-right: 10px;
+}
+.searchbox_button {
+  padding: 13px 10px 12px;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 18pt;
+  line-height: 3rem;
+  background-color: #428bca;
+  cursor: pointer;
+  border: none;
+  vertical-align: middle;
+  margin-top: 15px;
+}*/
+/*.searchbox {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 300;
+    color: #222;
+    font-size: 16px;
+    width: 300px;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #CCC;
+    vertical-align: middle;
+}
+.searchbox_button {
+    background-color: #428bca; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}*/
+/*input {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 300;
+    color: #222;
+    font-size: 18pt;
+    width: 300px;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #CCC;
+    vertical-align: middle;
+}
+.searchbox_button {
+    padding: 13px 10px 12px;
+    border-radius: 6px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 18pt;
+    line-height: 1em;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    border: 1px solid #CCC;
+    vertical-align: middle;
+    margin-top: 15px;
+}*/
+form{
+    width:500px;
+    margin-left: 10px;
+}
+.search { 
+    padding:6px 15px 6px 30px;
+    margin:3px; 
+    background: url('./images/search.png') no-repeat 8px 6px; 
+    font-size: 16px;
+
+}
+.searchbox_button {
+    position:relative; 
+    left:6px;
+    border:1px solid #adc5cf;
+    background: #428bca; /* Old browsers */
+    color:#fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 6px 8px;
+     border-radius: 6px;
+}
+/*.close-classic {
+  color: #777;
+  font: 14px/100% arial, sans-serif;
+  position: absolute;
+  right: 5px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #fff;
+  top: 5px;
+  content: 'X';
+}*/
+.dialog {
+  background: #ddd;
+  border: 1px solid #ccc;
+  float: left;
+  height: 300px;
+  position: relative;
+  width: 200px;
+  margin-right: 20px;
+  padding-left: 20px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  
+}
+img{
+    width:150px;
+    height:180px;
+    padding:20px 0;
+    margin:auto;
+}
+.user-following {
+    display: inline-block;
+    font-size: 22px;
+    color: #999;
+}
+/*[class*='close-'] {
+  color: #777;
+  font: 14px/100% arial, sans-serif;
+  position: absolute;
+  right: 5px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #fff;
+  top: 5px;
+}*/
+/*.close-classic:after {
+  content: 'X';*/ /* ANSI X letter 
+}
+*/
+./*close{
+    float:right;
+    padding-right: 0px;
+}*/
+.clearfix{
+    clear: both;
+}
+/*.dialog_btn{
+  left:0px;
+  top:0px;
+  position:absolute;
+}*/
+/*.pill{
+    border-radius:7px
+    background-color:red
+    max-width:100px
+    text-align center
+    color white
+    padding 10px 15px
+    font-family body-font
+    margin 10px auto
+    display inline-block
+    margin-right 20px
+    cursor pointer
+}*/
+.pill{
+      border-radius:7px;
+    background-color:white;
+    max-width:100px;
+    text-align:center;
+    color:black;
+    padding:10px 15px;
+    font-family:body-font;
+    margin: 10px auto;
+    display:inline-block;
+    margin-right:20px;
+    cursor:pointer;
+    display: inline-block;
+}
